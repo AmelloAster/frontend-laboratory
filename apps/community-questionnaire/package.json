@@ -1,9 +1,9 @@
 {
-  "name": "web",
+  "name": "community-questionnaire",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "dotenv -- next dev --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,7 +15,7 @@
     "ui": "workspace:*"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "babel-config": "workspace:*",
     "eslint-config-custom": "workspace:*",
     "eslint": "7.32.0",
     "tsconfig": "workspace:*",
