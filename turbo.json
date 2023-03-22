@@ -1,10 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
+  "globalDependencies": ["**/.env.*local", "**/.env"],
+  "globalEnv": ["NEXT_PUBLIC_REACT_APP_API_URL"],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "outputs": ["dist/**", ".next/**"],
+      "env": ["NEXT_PUBLIC_REACT_APP_API_URL"]
     },
     "lint": {
       "outputs": []

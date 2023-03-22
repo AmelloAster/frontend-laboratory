@@ -1,11 +1,5 @@
-import { Button } from 'ui/next-ui';
+import TodoTask from './todo-task';
 
 export default function Docs() {
-  return (
-    <div>
-      <h1>Docs</h1>
-      <Button />
-      11
-    </div>
-  );
+  return <TodoTask />;
 }
